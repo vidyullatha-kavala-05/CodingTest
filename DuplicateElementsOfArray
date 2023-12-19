@@ -1,0 +1,22 @@
+package Test19122023;
+
+public class DuplicateElementsOfArray {
+
+	public static void main(String[] args) {
+				
+		int array[] = new int[] { 10, 20, 40, 10, 60, 20, 90};
+		
+		System.out.println("Duplicate elements of array: ");
+		
+		for (int start=0; start<array.length; start++) {
+			for ( int num=start+1; num<array.length; num++) {
+				if (array[start]==array[num])
+					System.out.println(array[num]);
+			}
+		}
+		
+		System.out.println("Vidyullatha");
+
+	}
+
+}
