@@ -1,0 +1,44 @@
+
+package Test19122023;
+
+import java.util.Scanner;
+
+public class PyramidPattern {
+	
+    public static void main(String[] args) {
+    	
+    	//printing name
+    	System.out.println("Vidyullatha");
+    	
+    	//user input
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("Enter the number of rows for the pyramid: ");
+    	int rows = sc.nextInt();
+    	sc.close();
+    	
+    	int start = 1;
+    	
+    	int space = rows * 2;
+
+    	for(int initial=1; initial<=rows; initial++) {
+    		
+    		for (int integer=1; integer<space; integer++){
+    			System.out.print(" ");
+    			
+    		}
+    		space -=2;
+    		
+    		for (int number=1; number<=initial; number++) {
+    			System.out.print(start+" ");
+    			start++;
+    		}
+    		
+    		System.out.println();
+    	}
+        
+    	
+    }
+    
+    
+    
+}
