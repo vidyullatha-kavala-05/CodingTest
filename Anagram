@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Anagram {
 
 	public static void main(String[] args) {
+		
+		//user imput
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter the first string: ");
@@ -13,15 +15,19 @@ public class Anagram {
 		System.out.println("Enter the second string: ");
 		String string2 = sc.nextLine();
 		
+		//checking for equal length
 		if(string1.length()==string2.length()) {
 			char[] charArr1=string1.toCharArray();
 			char[] charArr2=string2.toCharArray();
 			
+			//sorting
 			Arrays.sort(charArr1);
 			Arrays.sort(charArr2);
 			
+			//check for boolean function
 			boolean anagram = Arrays.equals(charArr1, charArr2);
 			
+			//checking using if else
 			if(anagram) {
 				System.out.println(string1+" and "+string2+" are Anagram ");
 			}
@@ -31,10 +37,13 @@ public class Anagram {
 			
 		}
 		
+		//if string lengths are not equals returns not anagram
 		else {
 			System.out.println(string1+" and "+string2+" are not Anagram ");
 		}
 		
+		
+		//printing name
 		System.out.println("Vidyullatha");
 
 
