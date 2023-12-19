@@ -4,10 +4,13 @@ public class DuplicateElementsOfArray {
 
 	public static void main(String[] args) {
 				
+		//array
 		int array[] = new int[] { 10, 20, 40, 10, 60, 20, 90};
 		
+		//prints duplicate elements of array
 		System.out.println("Duplicate elements of array: ");
 		
+		//checking
 		for (int start=0; start<array.length; start++) {
 			for ( int num=start+1; num<array.length; num++) {
 				if (array[start]==array[num])
@@ -15,6 +18,7 @@ public class DuplicateElementsOfArray {
 			}
 		}
 		
+		//printing name
 		System.out.println("Vidyullatha");
 
 	}
